@@ -3,6 +3,6 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-### Featured Project Title
-Mechanical Scribing Machine for Perovskite Solar Cells
+### Mechanical Scribing Machine for Perovskite Solar Cells
+
 ![Mechanical Scribing Machine Image](Photos/GAUSS.png)
