@@ -3,7 +3,141 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-### Mechanical Scribing Machine for Perovskite Solar Cells
+<!-- Project Section CSS Wrapper -->
+<style>
+  .project-container {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+    align-items: flex-start;
+  }
+  .project-gallery {
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fdfdfd;
+  }
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+  }
+  .carousel-slide.active {
+    display: block;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s;
+    user-select: none;
+    z-index: 10;
+  }
+  .carousel-btn:hover { background: rgba(0, 0, 0, 0.85); }
+  .prev-btn { left: 10px; }
+  .next-btn { right: 10px; }
+  
+  .project-info {
+    flex: 1.2;
+  }
+  .project-info h2 { margin-top: 0; color: #111; }
+  .tech-tag {
+    display: inline-block;
+    background: #eaecef;
+    color: #24292e;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    font-family: monospace;
+  }
 
-![Mechanical Scribing Machine Image](Photos/GAUSS.png)
-![Mechanical Scribing Machine CAD Image](Photos/Gauss_annotated.png)
+  /* Responsive Mobile Collapse */
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .project-gallery {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+</style>
+
+<!-- ========================================================= -->
+<!-- PROJECT 1: Mechanical Scribing Machine                    -->
+<!-- ========================================================= -->
+<div class="project-container">
+  
+  <!-- Left Side: Clickable Image Carousel -->
+  <div class="project-gallery" id="scribing-machine-gallery">
+    <button class="carousel-btn prev-btn" onclick="moveSlide('scribing-machine-gallery', -1)">&#10094;</button>
+    <button class="carousel-btn next-btn" onclick="moveSlide('scribing-machine-gallery', 1)">&#10095;</button>
+    
+    <img class="carousel-slide active" src="/Photos/GAUSS.png" alt="Mechanical Scribing Machine Front Profile">
+    <img class="carousel-slide" src="/Photos/Gauss_annotated.png" alt="Mechanical Scribing Machine CAD Blueprint Diagram">
+  </div>
+
+  <!-- Right Side: Descriptive Content -->
+  <div class="project-info">
+    <h2>Mechanical Scribing Machine for Perovskite Solar Cells</h2>
+    <div>
+      <span class="tech-tag">Hardware Design</span>
+      <span class="tech-tag">CAD Modeling</span>
+      <span class="tech-tag">Solar Engineering</span>
+    </div>
+    <p style="margin-top: 1rem;">
+      Insert your detailed project description here. Explain the mechanical engineering requirements, 
+      the purpose of scribing layers in Perovskite solar cells, and how your prototype or 
+      CAD configuration solves precision manufacturing challenges.
+    </p>
+    <p>
+      Highlight your primary contributions, key dimensions, structural components, 
+      or performance data yielded by this specific mechanical module build.
+    </p>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- LIGHTWEIGHT MULTI-CAROUSEL JAVASCRIPT ENGINE              -->
+<!-- ========================================================= -->
+<script>
+  function moveSlide(galleryId, direction) {
+    const gallery = document.getElementById(galleryId);
+    const slides = gallery.getElementsByClassName('carousel-slide');
+    let activeIndex = 0;
+
+    // Find currently active image index
+    for (let i = 0; i < slides.length; i++) {
+      if (slides[i].classList.contains('active')) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    // Hide old active image
+    slides[activeIndex].classList.remove('active');
+
+    // Calculate new target index safely loop around boundaries
+    let newIndex = activeIndex + direction;
+    if (newIndex >= slides.length) { newIndex = 0; }
+    if (newIndex < 0) { newIndex = slides.length - 1; }
+
+    // Reveal new target image
+    slides[newIndex].classList.add('active');
+  }
+</script>
