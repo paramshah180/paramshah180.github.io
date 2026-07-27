@@ -96,18 +96,21 @@ permalink: /projects/
   <div class="project-info">
     <h2>Mechanical Scribing Machine for Perovskite Solar Cells</h2>
     <div>
-      <span class="tech-tag">Hardware Design</span>
+      <span class="tech-tag">Hardware Design and Integration</span>
       <span class="tech-tag">CAD Modeling</span>
-      <span class="tech-tag">Solar Engineering</span>
+      <span class="tech-tag">Control Systems</span>
     </div>
     <p style="margin-top: 1rem;">
-      Insert your detailed project description here. Explain the mechanical engineering requirements, 
+      <!-- Insert your detailed project description here. Explain the mechanical engineering requirements, 
       the purpose of scribing layers in Perovskite solar cells, and how your prototype or 
-      CAD configuration solves precision manufacturing challenges.
+      CAD configuration solves precision manufacturing challenges. -->
+      This system is used to perform three scribes, each cutting through three different materials, that are crucial to the manufacturing of perovskite solar            cells. My team and I retrofitted a CNC machine and added our custom-built Z axis assembly that enables the user to perscribe specific amounts of force with a .5 gram percision and 150 micron positional tolerence. 
     </p>
     <p>
-      Highlight your primary contributions, key dimensions, structural components, 
-      or performance data yielded by this specific mechanical module build.
+      <!-- Highlight your primary contributions, key dimensions, structural components, 
+      or performance data yielded by this specific mechanical module build. -->
+      Led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
+      
     </p>
   </div>
 </div>
