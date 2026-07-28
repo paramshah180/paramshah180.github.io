@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  
+  <style>
+    /* Techy Dark Mode Global Variables */
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #161b26;
+      --text-color: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent-brown: #8b5a2b;
+      --accent-brown-hover: #a06d3b;
+      --border-color: #242b3d;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Courier New', Courier, monospace; /* Tech/code font aesthetic */
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Container alignment layout */
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Modern Minimalist Header Layout */
+    .site-header {
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    /* Stealth Navigation Links Menu */
+    .site-nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .page-link {
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      color: transparent; /* Makes text completely invisible by default */
+      background-color: transparent;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: all 0.25s ease-in-out;
+    }
+
+    /* Reveals custom brown buttons only when cursor hovers over them */
+    .page-link:hover {
+      color: #ffffff;
+      background-color: var(--accent-brown);
+      border-color: var(--accent-brown-hover);
+      box-shadow: 0 0 12px rgba(139, 90, 43, 0.4); /* Subtle ambient glow */
+    }
+
+    /* Inject dynamic page content safely underneath layout */
+    .main-content {
+      padding: 3rem 0;
+    }
+
+    /* Fix image and video card text containers for dark mode consistency */
+    .project-container {
+      background-color: var(--card-bg) !important;
+      border: 1px solid var(--border-color) !important;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .project-info h2 {
+      color: #ffffff !important;
+    }
+    .tech-tag {
+      background: var(--bg-color) !important;
+      color: var(--text-muted) !important;
+      border: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="site-header">
+      <a class="site-title" href="/">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a class="page-link" href="/">Home</a>
+        <a class="page-link" href="/about/">About Me</a>
+        <a class="page-link" href="/projects/">Projects</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      {{ content }}
+    </main>
+  </div>
+
+</body>
+</html>
