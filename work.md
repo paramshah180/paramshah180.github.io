@@ -121,12 +121,12 @@ permalink: /work/
   
   /* Logo Formatting Rule */
   .company-logo {
-    display: block;
-    max-height: 40px; /* Restricts heights to prevent table distortions */
-    width: auto;
-    margin-top: 0.75rem;
-    filter: grayscale(20%); /* Soft tech tone blending */
-  }
+  display: block;        /* Enables margin auto centering */
+  margin: 12px auto 0;  /* Centers horizontally, adds space below company name */
+  max-width: 140px;      /* Enlarges the image (adjust from your current size) */
+  height: auto;          /* Mainthe image's original aspect ratio */
+  object-fit: contain;   /* Prevents stretching or distortion */
+}
 
   /* Responsive Grid Breakdown for Small Mobile Screens */
   @media (max-width: 600px) {
