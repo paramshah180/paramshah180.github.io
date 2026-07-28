@@ -34,7 +34,7 @@ permalink: /work/
       <td>
         <div class="company-name">American Electric Power (AEP)</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/aep-logo.png") -->
-        <!-- <img src="/Photos/YOUR_LOGO_HERE.png" alt="AEP Logo" class="company-logo"> -->
+         <img src="" alt="/Photos/aep.png" class="company-logo"> 
       </td>
       <td class="role-text">Power Systems Intern</td>
     </tr>
@@ -45,7 +45,7 @@ permalink: /work/
       <td>
         <div class="company-name">Eaton</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/eaton-logo.png") -->
-        <!-- <img src="/Photos/YOUR_LOGO_HERE.png" alt="Eaton Logo" class="company-logo"> -->
+        <img src="/Photos/eaton.jpg" alt="Eaton Logo" class="company-logo">
       </td>
       <td class="role-text">Mechanical Design Intern</td>
     </tr>
@@ -56,7 +56,7 @@ permalink: /work/
       <td>
         <div class="company-name">DERConnect</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/derconnect-logo.png") -->
-        <!-- <img src="/Photos/YOUR_LOGO_HERE.png" alt="DERConnect Logo" class="company-logo"> -->
+        <img src="/Photos/derconnect.png" alt="DERConnect Logo" class="company-logo"> 
       </td>
       <td class="role-text">Research Assistant</td>
     </tr>
@@ -67,7 +67,7 @@ permalink: /work/
       <td>
         <div class="company-name">Eastman Chemical Company</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/eastman-logo.png") -->
-        <!-- <img src="/Photos/YOUR_LOGO_HERE.png" alt="Eastman Logo" class="company-logo"> -->
+         <img src="/Photos/eastman.png" alt="Eastman Logo" class="company-logo"> 
       </td>
       <td class="role-text">Business Analyst Intern</td>
     </tr>
