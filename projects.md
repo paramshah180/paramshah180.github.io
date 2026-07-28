@@ -78,39 +78,44 @@ permalink: /projects/
   }
 </style>
 
+
+
 <!-- ========================================================= -->
-<!-- PROJECT 1: Mechanical Scribing Machine                    -->
+<!-- Project 1: Motor Drive for Electric Bike                               -->
 <!-- ========================================================= -->
+
 <div class="project-container">
   
-  <!-- Left Side: Clickable Image Carousel -->
-  <div class="project-gallery" id="scribing-machine-gallery">
-    <button class="carousel-btn prev-btn" onclick="moveSlide('scribing-machine-gallery', -1)">&#10094;</button>
-    <button class="carousel-btn next-btn" onclick="moveSlide('scribing-machine-gallery', 1)">&#10095;</button>
+  <!-- Left Side: Multi-Media Carousel (Images + Video) -->
+  <div class="project-gallery" id="media-carousel-gallery">
+    <button class="carousel-btn prev-btn" onclick="moveSlide('media-carousel-gallery', -1)">❮</button>
+    <button class="carousel-btn next-btn" onclick="mediaMoveSlide('media-carousel-gallery', 1)">❯</button>
     
-    <img class="carousel-slide active" src="/Photos/GAUSS.png" alt="Mechanical Scribing Machine Front Profile">
-    <img class="carousel-slide" src="/Photos/Gauss_annotated.png" alt="Mechanical Scribing Machine CAD Blueprint Diagram">
+    <!-- Slide 1: The Autoplay/Looping Video -->
+    
+    <video class="carousel-slide active" autoplay loop muted playsinline preload="metadata">
+      <source src="/Photos/MotorDriveVid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Slide 2: Regular Image -->
+    
+    <img class="carousel-slide" src="/Photos/MotorDrivePCB.png" alt="Project Image 1">
+    
   </div>
 
   <!-- Right Side: Descriptive Content -->
   <div class="project-info">
-    <h2>Mechanical Scribing Machine for Perovskite Solar Cells</h2>
+    <h2> PMSM Motor Drive</h2>
     <div>
-      <span class="tech-tag">Hardware Design and Integration</span>
-      <span class="tech-tag">CAD Modeling</span>
-      <span class="tech-tag">Control Systems</span>
+      <span class="tech-tag">C++</span>
+      <span class="tech-tag">Hardware Integration and Validation</span>
+      <span class="tech-tag">Motor Drives</span>
+      <span class="tech-tag">Control of Power Electronics</span>
     </div>
     <p style="margin-top: 1rem;">
-      <!-- Insert your detailed project description here. Explain the mechanical engineering requirements, 
-      the purpose of scribing layers in Perovskite solar cells, and how your prototype or 
-      CAD configuration solves precision manufacturing challenges. -->
-      This system is used to perform three scribes, each cutting through three different materials, that are crucial to the manufacturing of perovskite solar            cells. My team and I retrofitted a CNC machine and added our custom-built Z axis assembly that enables the user to perscribe specific amounts of force with a .5 gram percision and 150 micron positional tolerence. 
-    </p>
-    <p>
-      <!-- Highlight your primary contributions, key dimensions, structural components, 
-      or performance data yielded by this specific mechanical module build. -->
-      Led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
-      
+      Brought up and validated PMSM motor drive while interfacing IPM (Intelligent Power Module) and Hall Effect sensors. Implemented closed loop controls 
+      using a TI C2000 MCU to control speed of motor with a throttle input. 
     </p>
   </div>
 </div>
@@ -148,6 +153,47 @@ permalink: /projects/
     </p>
   </div>
 </div>
+
+<!-- ========================================================= -->
+<!-- PROJECT 3: Mechanical Scribing Machine                    -->
+<!-- ========================================================= -->
+
+<div class="project-container">
+  
+  <!-- Left Side: Clickable Image Carousel -->
+  <div class="project-gallery" id="scribing-machine-gallery">
+    <button class="carousel-btn prev-btn" onclick="moveSlide('scribing-machine-gallery', -1)">&#10094;</button>
+    <button class="carousel-btn next-btn" onclick="moveSlide('scribing-machine-gallery', 1)">&#10095;</button>
+    
+    <img class="carousel-slide active" src="/Photos/GAUSS.png" alt="Mechanical Scribing Machine Front Profile">
+    <img class="carousel-slide" src="/Photos/Gauss_annotated.png" alt="Mechanical Scribing Machine CAD Blueprint Diagram">
+  </div>
+
+  <!-- Right Side: Descriptive Content -->
+  <div class="project-info">
+    <h2>Mechanical Scribing Machine for Perovskite Solar Cells</h2>
+    <div>
+      <span class="tech-tag">Hardware Design and Integration</span>
+      <span class="tech-tag">CAD Modeling</span>
+      <span class="tech-tag">Control Systems</span>
+    </div>
+    <p style="margin-top: 1rem;">
+      <!-- Insert your detailed project description here. Explain the mechanical engineering requirements, 
+      the purpose of scribing layers in Perovskite solar cells, and how your prototype or 
+      CAD configuration solves precision manufacturing challenges. -->
+      This system is used to perform three scribes, each cutting through three different materials, that are crucial to the manufacturing of perovskite solar            cells. My team and I retrofitted a CNC machine and added our custom-built Z axis assembly that enables the user to perscribe specific amounts of force with a .5 gram percision and 150 micron positional tolerence. 
+    </p>
+    <p>
+      <!-- Highlight your primary contributions, key dimensions, structural components, 
+      or performance data yielded by this specific mechanical module build. -->
+      Led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
+      
+    </p>
+  </div>
+</div>
+
+
+
 <!-- ========================================================= -->
 <!-- Motor Drive for Electric Bike                               -->
 <!-- ========================================================= -->
