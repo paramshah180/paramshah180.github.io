@@ -182,7 +182,8 @@ permalink: /projects/
       <span class="tech-tag">Control of Power Electronics</span>
     </div>
     <p style="margin-top: 1rem;">
-      Your project description details go here. The video on the left will play instantly and loop seamlessly like an animated high-quality GIF.
+      Brought up and validated PMSM motor drive while interfacing IPM (Intelligent Power Module) and Hall Effect sensors. Implemented closed loop controls 
+      using a TI C2000 MCU to control speed of motor with a throttle input. 
     </p>
   </div>
 </div>
