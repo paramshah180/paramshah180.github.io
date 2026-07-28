@@ -142,10 +142,9 @@ permalink: /projects/
       <span class="tech-tag">C++</span>
     </div>
     <p style="margin-top: 1rem;">
-      This system is used to perform three scribes, each cutting through three different materials, that are crucial to the manufacturing of perovskite solar cells. My team and I retrofitted a CNC machine and added our custom-built Z axis assembly that enables the user to perscribe specific amounts of force with a .5 gram percision and 150 micron positional tolerence. 
+      Boost converter used to step up 24 volts to 48 volts to power an electric bike. KiCAD was used for the PCB schematic and layout and a TI C2000 MCU was used to configure the gate drivers, MOSFETs, and dead time. Inductor was designed using the KG method, comparing the geometric constraints to the core properties of the inductor.  
     </p>
     <p>
-      I led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
     </p>
   </div>
 </div>
