@@ -148,6 +148,90 @@ permalink: /projects/
     </p>
   </div>
 </div>
+<!-- ========================================================= -->
+<!-- Motor Drive for Electric Bike                               -->
+<!-- ========================================================= -->
+
+<div class="project-container">
+  
+  <!-- Left Side: Multi-Media Carousel (Images + Video) -->
+  <div class="project-gallery" id="media-carousel-gallery">
+    <button class="carousel-btn prev-btn" onclick="moveSlide('media-carousel-gallery', -1)">❮</button>
+    <button class="carousel-btn next-btn" onclick="mediaMoveSlide('media-carousel-gallery', 1)">❯</button>
+    
+    <!-- Slide 1: The Autoplay/Looping Video -->
+    <video class="carousel-slide active" autoplay loop muted playsinline preload="metadata">
+      <source src="/Photos/MotorDriveVid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Slide 2: Regular Image -->
+    <img class="carousel-slide" src="/Photos/MotorDrivePCB.png" alt="Project Image 1">
+    
+  </div>
+
+  <!-- Right Side: Descriptive Content -->
+  <div class="project-info">
+    <h2> PMSM Motor Drive</h2>
+    <div>
+      <span class="tech-tag">C++</span>
+      <span class="tech-tag">Hardware Integration and Validation</span>
+      <span class="tech-tag">Motor Drives</span>
+      <span class="tech-tag">Control of Power Electronics</span>
+    </div>
+    <p style="margin-top: 1rem;">
+      Your project description details go here. The video on the left will play instantly and loop seamlessly like an animated high-quality GIF.
+    </p>
+  </div>
+</div>
+
+<!-- ========================================================= -->
+<!-- SMART VIDEO-AWARE JAVASCRIPT CAROUSEL ENGINE              -->
+<!-- ========================================================= -->
+<script>
+  function mediaMoveSlide(galleryId, direction) {
+    const gallery = document.getElementById(galleryId);
+    const slides = gallery.querySelectorAll('.carousel-slide');
+    let activeIndex = 0;
+
+    // Find the currently active slide index
+    for (let i = 0; i < slides.length; i++) {
+      if (slides[i].classList.contains('active')) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    // If the current slide is a video, pause it before switching away
+    if (slides[activeIndex].tagName === 'VIDEO') {
+      slides[activeIndex].pause();
+    }
+
+    // Remove active class from old slide
+    slides[activeIndex].classList.remove('active');
+
+    // Calculate new target index safely (loop around edges)
+    let newIndex = activeIndex + direction;
+    if (newIndex >= slides.length) { newIndex = 0; }
+    if (newIndex < 0) { newIndex = slides.length - 1; }
+
+    // Reveal new target slide
+    slides[newIndex].classList.add('active');
+
+    // If the new slide is a video, reset its timeline and play it automatically
+    if (slides[newIndex].tagName === 'VIDEO') {
+      slides[newIndex].currentTime = 0;
+      slides[newIndex].play().catch(error => {
+        console.log("Autoplay context prevented video start:", error);
+      });
+    }
+  }
+
+  // Bind the new media-aware logic to old buttons if needed
+  function moveSlide(galleryId, direction) {
+    mediaMoveSlide(galleryId, direction);
+  }
+</script>
 
 <!-- ========================================================= -->
 <!-- LIGHTWEIGHT MULTI-CAROUSEL JAVASCRIPT ENGINE              -->
