@@ -115,6 +115,45 @@ permalink: /projects/
   </div>
 </div>
 
+
+<!-- ========================================================= -->
+<!-- PROJECT 2: Boost Converter                    -->
+<!-- ========================================================= -->
+<div class="project-container">
+  
+  <!-- Left Side: Clickable Image Carousel -->
+  <div class="project-gallery" id="boost-converter-gallery">
+    <button class="carousel-btn prev-btn" onclick="moveSlide('boost-converter-gallery', -1)">&#10094;</button>
+    <button class="carousel-btn next-btn" onclick="moveSlide('boost-converter-gallery', 1)">&#10095;</button>
+    
+    <img class="carousel-slide active" src="/Photos/GAUSS.png" alt="Mechanical Scribing Machine Front Profile">
+    <img class="carousel-slide" src="/Photos/Gauss_annotated.png" alt="Mechanical Scribing Machine CAD Blueprint Diagram">
+  </div>
+
+  <!-- Right Side: Descriptive Content -->
+  <div class="project-info">
+    <h2>Boost Converter</h2>
+    <div>
+      <span class="tech-tag">PCB Layout</span>
+      <span class="tech-tag">Inductor Design</span>
+      <span class="tech-tag">EMI/EMC Mitigation</span>
+      <span class="tech-tag">C++</span>
+    </div>
+    <p style="margin-top: 1rem;">
+      <!-- Insert your detailed project description here. Explain the mechanical engineering requirements, 
+      the purpose of scribing layers in Perovskite solar cells, and how your prototype or 
+      CAD configuration solves precision manufacturing challenges. -->
+      This system is used to perform three scribes, each cutting through three different materials, that are crucial to the manufacturing of perovskite solar            cells. My team and I retrofitted a CNC machine and added our custom-built Z axis assembly that enables the user to perscribe specific amounts of force with a .5 gram percision and 150 micron positional tolerence. 
+    </p>
+    <p>
+      <!-- Highlight your primary contributions, key dimensions, structural components, 
+      or performance data yielded by this specific mechanical module build. -->
+      Led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
+      
+    </p>
+  </div>
+</div>
+
 <!-- ========================================================= -->
 <!-- LIGHTWEIGHT MULTI-CAROUSEL JAVASCRIPT ENGINE              -->
 <!-- ========================================================= -->
