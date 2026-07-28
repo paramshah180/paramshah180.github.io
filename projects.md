@@ -195,46 +195,6 @@ permalink: /projects/
 
 
 <!-- ========================================================= -->
-<!-- Motor Drive for Electric Bike                               -->
-<!-- ========================================================= -->
-
-<div class="project-container">
-  
-  <!-- Left Side: Multi-Media Carousel (Images + Video) -->
-  <div class="project-gallery" id="media-carousel-gallery">
-    <button class="carousel-btn prev-btn" onclick="moveSlide('media-carousel-gallery', -1)">❮</button>
-    <button class="carousel-btn next-btn" onclick="mediaMoveSlide('media-carousel-gallery', 1)">❯</button>
-    
-    <!-- Slide 1: The Autoplay/Looping Video -->
-    
-    <video class="carousel-slide active" autoplay loop muted playsinline preload="metadata">
-      <source src="/Photos/MotorDriveVid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- Slide 2: Regular Image -->
-    
-    <img class="carousel-slide" src="/Photos/MotorDrivePCB.png" alt="Project Image 1">
-    
-  </div>
-
-  <!-- Right Side: Descriptive Content -->
-  <div class="project-info">
-    <h2> PMSM Motor Drive</h2>
-    <div>
-      <span class="tech-tag">C++</span>
-      <span class="tech-tag">Hardware Integration and Validation</span>
-      <span class="tech-tag">Motor Drives</span>
-      <span class="tech-tag">Control of Power Electronics</span>
-    </div>
-    <p style="margin-top: 1rem;">
-      Brought up and validated PMSM motor drive while interfacing IPM (Intelligent Power Module) and Hall Effect sensors. Implemented closed loop controls 
-      using a TI C2000 MCU to control speed of motor with a throttle input. 
-    </p>
-  </div>
-</div>
-
-<!-- ========================================================= -->
 <!-- SMART VIDEO-AWARE JAVASCRIPT CAROUSEL ENGINE              -->
 <!-- ========================================================= -->
 <script>
