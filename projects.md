@@ -149,7 +149,7 @@ permalink: /projects/
     <p>
       <!-- Highlight your primary contributions, key dimensions, structural components, 
       or performance data yielded by this specific mechanical module build. -->
-      Led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
+      I led the hardware integration of the CNC machine, custom Z axis assembly, load cells, amplifiers, and user application script. 
       
     </p>
   </div>
