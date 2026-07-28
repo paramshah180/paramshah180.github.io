@@ -34,7 +34,7 @@ permalink: /work/
       <td>
         <div class="company-name">American Electric Power (AEP)</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/aep-logo.png") -->
-         <img src="" alt="/Photos/aep.png" class="company-logo"> 
+         <img src="/Photos/aep.png" alt="AEP Logo" class="company-logo"> 
       </td>
       <td class="role-text">Power Systems Intern</td>
     </tr>
