@@ -127,9 +127,9 @@ permalink: /projects/
     <button class="carousel-btn prev-btn" onclick="moveSlide('boost-converter-gallery', -1)">&#10094;</button>
     <button class="carousel-btn next-btn" onclick="moveSlide('boost-converter-gallery', 1)">&#10095;</button>
     
-    <img class="carousel-slide active" src="Photos/CADBoostConverter.png" alt="CAD of Boost Converter">
-    <img class="carousel-slide" src="Photos/PCB_board.jpg" alt="Front of PCB">
-    <img class="carousel-slide" src="Photos/BoostWaveforms.png" alt="Waveforms of Boost Converter">
+    <img class="carousel-slide active" src="/Photos/CADBoostConverter.png" alt="CAD of Boost Converter">
+    <img class="carousel-slide" src="/Photos/PCB_board.jpg" alt="Front of PCB">
+    <img class="carousel-slide" src="/Photos/BoostWaveforms.png" alt="Waveforms of Boost Converter">
   </div>
 
   <!-- Right Side: Descriptive Content -->
