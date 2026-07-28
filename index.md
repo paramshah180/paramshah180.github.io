@@ -6,7 +6,7 @@ Welcome to my portfolio! My name is Param Shah, I am a current graduate student 
 
 Use the menu links above to explore my work and history.
 
-<!-- Homepage Centerpiece Carousel -->
+<!-- Homepage Centerpiece Carousel (Scaled Down) -->
 <div class="home-gallery" id="home-carousel-gallery">
   <button class="home-carousel-btn home-prev-btn" onclick="moveHomeSlide(-1)">❮</button>
   <button class="home-carousel-btn home-next-btn" onclick="moveHomeSlide(1)">❯</button>
@@ -22,20 +22,20 @@ Use the menu links above to explore my work and history.
 <style>
   .home-gallery {
     width: 100%;
-    max-width: 800px;
+    max-width: 480px;    /* Scaled down from 800px to take up less screen space */
     margin: 2rem auto;
     position: relative;
     overflow: hidden;
-    background: transparent; /* Melts cleanly into your dark background */
-    border: none !important; /* Removes framing boxes */
-    box-shadow: none !important; /* Removes framing lines */
+    background: transparent; 
+    border: none !important; 
+    box-shadow: none !important; 
   }
   
   .home-slide {
     display: none;
     width: 100%;
-    height: auto;         /* Forces full proportional layouts */
-    object-fit: contain;  /* Completely stops the browser from zooming/cropping */
+    height: auto;         /* Preserves exact original image proportions */
+    object-fit: contain;  /* Guarantees no cropping ever occurs */
   }
   
   .home-slide.active {
@@ -49,9 +49,9 @@ Use the menu links above to explore my work and history.
     background: rgba(11, 15, 25, 0.7);
     color: white;
     border: 1px solid var(--border-color);
-    padding: 14px 18px;
+    padding: 10px 14px;  /* Slightly smaller buttons to match scaled layout */
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem;   /* Adjusted arrow size */
     font-weight: bold;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
@@ -65,8 +65,8 @@ Use the menu links above to explore my work and history.
     box-shadow: 0 0 10px rgba(139, 90, 43, 0.5);
   }
   
-  .home-prev-btn { left: 15px; }
-  .home-next-btn { right: 15px; }
+  .home-prev-btn { left: 10px; }
+  .home-next-btn { right: 10px; }
 </style>
 
 <!-- ========================================================= -->
@@ -78,7 +78,6 @@ Use the menu links above to explore my work and history.
     const slides = gallery.getElementsByClassName('home-slide');
     let activeIndex = 0;
 
-    // Locate active image index
     for (let i = 0; i < slides.length; i++) {
       if (slides[i].classList.contains('active')) {
         activeIndex = i;
@@ -86,15 +85,12 @@ Use the menu links above to explore my work and history.
       }
     }
 
-    // Hide old active image
     slides[activeIndex].classList.remove('active');
 
-    // Calculate new index wrapping around boundaries
     let newIndex = activeIndex + direction;
     if (newIndex >= slides.length) { newIndex = 0; }
     if (newIndex < 0) { newIndex = slides.length - 1; }
 
-    // Reveal target image
     slides[newIndex].classList.add('active');
   }
 </script>
