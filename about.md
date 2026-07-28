@@ -11,6 +11,6 @@ These experiences inspired my next move, a master's degree at UT Austin in elect
 When I'm not working on my next project, you can find me playing whatever new sport has recently caught my attention or spending time with friends and family. 
 
 <p align="center" style="margin-bottom: 2rem;">
-  <img src="/Photos/aboutme.jpg" alt="About Me Portrait" width="250px" style="border-radius: 8px; border: 2px solid #242b3d; box-shadow: 0 0 15px rgba(139, 90, 43, 0.3);">
+  <img src="/Photos/aboutme.jpg" alt="About Me Portrait" width="250px" style="border-radius: 0; border: 2px solid #242b3d; box-shadow: 0 0 15px rgba(139, 90, 43, 0.3);">
 </p>
 
