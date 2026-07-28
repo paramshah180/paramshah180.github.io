@@ -119,6 +119,7 @@ permalink: /projects/
 <!-- ========================================================= -->
 <!-- PROJECT 2: Boost Converter                    -->
 <!-- ========================================================= -->
+
 <div class="project-container">
   
   <!-- Left Side: Clickable Image Carousel -->
