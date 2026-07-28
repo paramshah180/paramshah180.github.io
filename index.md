@@ -7,15 +7,6 @@ Welcome to my portfolio! My name is Param Shah, I am a current graduate student 
 Use the menu links above to explore my work and history.
 
 ---
-layout: default
-title: Home
----
-
-<!-- Welcome Introduction -->
-<h1 style="margin-top: 0; color: #ffffff;">Welcome to My Portfolio</h1>
-<p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2.5rem;">
-  Explore my engineering projects, hardware designs, and technical documentation using the menu links above.
-</p>
 
 <!-- Homepage Centerpiece Carousel -->
 <div class="home-gallery" id="home-carousel-gallery">
