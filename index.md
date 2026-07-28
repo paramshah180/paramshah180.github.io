@@ -6,8 +6,6 @@ Welcome to my portfolio! My name is Param Shah, I am a current graduate student 
 
 Use the menu links above to explore my work and history.
 
----
-
 <!-- Homepage Centerpiece Carousel -->
 <div class="home-gallery" id="home-carousel-gallery">
   <button class="home-carousel-btn home-prev-btn" onclick="moveHomeSlide(-1)">❮</button>
@@ -27,18 +25,17 @@ Use the menu links above to explore my work and history.
     max-width: 800px;
     margin: 2rem auto;
     position: relative;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    background: #161b26;
-    border: 1px solid var(--border-color);
+    background: transparent; /* Melts cleanly into your dark background */
+    border: none !important; /* Removes framing boxes */
+    box-shadow: none !important; /* Removes framing lines */
   }
   
   .home-slide {
     display: none;
     width: 100%;
-    aspect-ratio: 16/9; /* Modern widescreen format */
-    object-fit: cover;   /* Ensures images fill the frame cleanly */
+    height: auto;         /* Forces full proportional layouts */
+    object-fit: contain;  /* Completely stops the browser from zooming/cropping */
   }
   
   .home-slide.active {
@@ -98,7 +95,6 @@ Use the menu links above to explore my work and history.
     if (newIndex < 0) { newIndex = slides.length - 1; }
 
     // Reveal target image
-    slides[newIndex].add('active');
     slides[newIndex].classList.add('active');
   }
 </script>
