@@ -22,9 +22,9 @@ title: Home
   <button class="home-carousel-btn home-prev-btn" onclick="moveHomeSlide(-1)">❮</button>
   <button class="home-carousel-btn home-next-btn" onclick="moveHomeSlide(1)">❯</button>
   
-  <img class="home-slide active" src="/Photos/Home_image.jpg" alt="Featured Portfolio Display 1">
+  <img class="home-slide active" src="/Photos/Home_image3.jpeg" alt="Featured Portfolio Display 1">
   <img class="home-slide" src="/Photos/Home_image2.jpeg" alt="Featured Portfolio Display 2">
-  <img class="home-slide" src="/Photos/Home_image3.jpeg" alt="Featured Portfolio Display 3">
+  <img class="home-slide" src="/Photos/Home_image.jpg" alt="Featured Portfolio Display 3">
 </div>
 
 <!-- ========================================================= -->
