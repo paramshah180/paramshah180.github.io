@@ -23,7 +23,7 @@ permalink: /work/
       <td>
         <div class="company-name">Power Electronics and Magnetics Group</div>
         <!-- INPUT LOGO PATH BELOW (Example: src="/Photos/pemg-logo.png") -->
-        <!-- <img src="/Photos/YOUR_LOGO_HERE.png" alt="PEMG Logo" class="company-logo"> -->
+         <img src="/Photos/pemg.png" alt="PEMG Logo" class="company-logo"> 
       </td>
       <td class="role-text">Graduate Research Assistant</td>
     </tr>
