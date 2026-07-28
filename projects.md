@@ -160,12 +160,14 @@ permalink: /projects/
     <button class="carousel-btn next-btn" onclick="mediaMoveSlide('media-carousel-gallery', 1)">❯</button>
     
     <!-- Slide 1: The Autoplay/Looping Video -->
+    
     <video class="carousel-slide active" autoplay loop muted playsinline preload="metadata">
       <source src="/Photos/MotorDriveVid.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
     <!-- Slide 2: Regular Image -->
+    
     <img class="carousel-slide" src="/Photos/MotorDrivePCB.png" alt="Project Image 1">
     
   </div>
