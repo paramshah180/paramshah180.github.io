@@ -46,11 +46,11 @@
       font-size: 1.3rem;
       font-weight: bold;
       letter-spacing: 1px;
-      color: var(--text-color);
+      color: #ffffff;
       text-decoration: none;
     }
 
-    /* Stealth Navigation Links Menu */
+    /* Navigation Links Menu */
     .site-nav {
       display: flex;
       gap: 1rem;
@@ -61,17 +61,16 @@
       font-weight: bold;
       letter-spacing: 0.5px;
       text-decoration: none;
-      color: transparent; /* Makes text completely invisible by default */
+      color: #ffffff !important; /* Text is now permanently white and visible */
       background-color: transparent;
       padding: 0.6rem 1.2rem;
       border-radius: 4px;
       border: 1px solid transparent;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
     /* Reveals custom brown buttons only when cursor hovers over them */
     .page-link:hover {
-      color: #ffffff;
       background-color: var(--accent-brown);
       border-color: var(--accent-brown-hover);
       box-shadow: 0 0 12px rgba(139, 90, 43, 0.4); /* Subtle ambient glow */
